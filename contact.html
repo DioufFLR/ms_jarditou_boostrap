@@ -55,21 +55,21 @@
     </div>
 <!-- ----Contenu principal----- -->
 <!-- -----Formulaire----- -->
-        <main id="form">
-            <h1 class="title">Contact</h1>
-            <form action="https://bienvu.net/script.php" method="post" id="myForm">
-                <p>* Ces zones sont obligatoires</p>
+        <main>
 
-                <fieldset>
-                    <legend>Vos coordonnées</legend>
-                    <label for="nom" >Votre nom* :</label><input type="text" name="nom" id="nom" >
-                    <br>
-                    <span id="nomManquant"></span>
-                    <br>
-                    <label for="prenom">Votre prenom* :</label><input type="text" name="prenom" id="prenom">
-                    <br>
-                    <span id="prenomManquant"></span>
-                    <br>
+            <p>* Ces zones sont obligatoires</p>
+            <div class="fs-1">Vos coordonnées</div>
+
+            <form id="myForm" action="https://bienvu.net/script.php" method="post">
+                <div class="form-group">
+                    <label for="nom" >Votre nom* :</label>
+                    <input type="text" class="form-control" name="nom" id="nom">
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Votre prenom* :</label>
+                    <input type="text" class="form-control" name="prenom" id="prenom">
+                </div>
+
                     <!-- -----Création d'un bouton radio requis avec homme pour valeur par défaut----- -->
                     <div>
                         <p>Sexe* :</p>
@@ -119,7 +119,9 @@
                     <input type="submit" value="Envoyer" id="boutonEnvoi">
                     <input type="reset" value="Annuler">
                 </div>
+
             </form>
+
         </main>
 
 <!-- -----Début footer----- -->
@@ -147,6 +149,8 @@
     </footer>
 
 </div>
+
+<script src="assets/js/script.js"></script>
 
 <!-- -----Balises script Bootstrap----- -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
