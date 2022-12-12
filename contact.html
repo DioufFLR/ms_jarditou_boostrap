@@ -53,8 +53,8 @@
     <div class="col-12">
         <img class="col-12" src="assets/src/img/promotion.jpg" alt="promo lames" title="Promo lames">
     </div>
-<!-- ----Contenu principal----- -->
-<!-- -----Formulaire----- -->
+    <!-- ----Contenu principal----- -->
+    <!-- -----Formulaire----- -->
     <main>
 
         <p>* Ces zones sont obligatoires</p>
@@ -70,60 +70,74 @@
                 <input type="text" class="form-control" name="prenom" id="prenom">
             </div>
 
-                        <p>Sexe* :</p>
-                        <input type="radio" name="sexe" id="man" value="Homme" checked>
-                        <label for="man">Homme</label>
-                        <input type="radio" name="sexe" id="woman" value="Femme">
-                        <label for="woman">Femme</label>
-                    </div>
-                    <label for="birth">Date de naissance* :</label><input type="date" name="birth" id="birth">
-                    <br>
-                    <span id="dateNaissanceManquant"></span>
-                    <br>
-                    <label for="cd">Code postal* :</label><input type="text" name="cd" id="cd">
-                    <br>
-                    <span id="codePostalManquant"></span>
-                    <br>
-                    <label for="adress">Adresse :</label><input type="text" name="adress" id="adress">
-                    <br>
-                    <label for="city">Ville :</label><input type="text" name="city" id="city" minlength="1">
-                    <br>
-                    <label for="email">Email* :</label><input type="text" id="email">
-                    <br>
-                    <span id="emailManquant"></span>
-                </fieldset>
+            <!-- -----Création d'un bouton radio requis avec homme pour valeur par défaut----- -->
+            <div class="form-group">
+                <p>Sexe* :</p>
+                <label for="man">Homme</label>
+                <input type="radio" name="sexe" id="man" value="Homme" checked>
+            </div>
+            <div class="form-group">
+                <label for="woman">Femme</label>
+                <input type="radio" name="sexe" id="woman" value="Femme">
+            </div>
 
-                <fieldset>
-                    <legend>Votre demande :</legend>
-                    <label for="sujet">Sujet* :</label>
-                    <select name="sujet" id="sujet">
-                        <option value="">Veuillez choisir un sujet</option>
-                        <option value="commandes">Mes commandes</option>
-                        <option value="questions">Questions sur un produit</option>
-                        <option value="reclamation">Réclamation</option>
-                        <option value="autres">Autres</option>
-                    </select>
-                    <br>
-                    <span id="sujetManquant"></span>
-                    <label for="question">Votre question* :</label><textarea name="question" id="question" cols="15" rows="2"></textarea>
-                    <br>
-                    <span id="questionManquante"></span>
-                </fieldset>
+            <div class="form-group">
+                <label for="birth">Date de naissance* :</label>
+                <input type="date" class="form-control" name="birth" id="birth">
+            </div>
 
-                <label for="check"></label>* J'accepte le traitement informatique de ce formulaire<input type="checkbox" name="check" id="check" required>
+            <div class="form-group">
+                <label for="cd">Code postal* :</label>
+                <input type="text" class="form-control" name="cd" id="cd">
+            </div>
+
+            <div class="form-group">
+                <label for="adress">Adresse :</label>
+                <input type="text" class="form-control" name="adress" id="adress">
+            </div>
+
+            <div class="form-group">
+                <label for="city">Ville :</label>
+                <input type="text" class="form-control" name="city" id="city" minlength="1">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email* :</label>
+                <input type="text" class="form-control" id="email">
+            </div>
+            <div class="fs-1">Votre demande</div>
+            <div class="form-group">
+                <label for="sujet">Sujet* :</label>
+                <select name="sujet" id="sujet" class="form-control">
+                    <option value="">Veuillez choisir un sujet</option>
+                    <option value="commandes">Mes commandes</option>
+                    <option value="questions">Questions sur un produit</option>
+                    <option value="reclamation">Réclamation</option>
+                    <option value="autres">Autres</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question">Votre question* :</label>
+                <textarea name="question" class="form-control" id="question" cols="15" rows="2"></textarea>
+            </div>
+
+            <label for="check"></label>* J'accepte le traitement informatique de ce formulaire<input type="checkbox"  name="check" id="check" required>
 
 
-                <div class="submit">
-                    <input type="submit" value="Envoyer" id="boutonEnvoi">
-                    <input type="reset" value="Annuler">
-                </div>
-            </form>
-        </main>
+            <div class="submit">
+                <input type="submit" value="Envoyer" id="boutonEnvoi">
+                <input type="reset" value="Annuler">
+            </div>
 
-<!-- -----Début footer----- -->
+        </form>
+
+    </main>
+
+    <!-- -----Début footer----- -->
     <footer>
 
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -145,6 +159,8 @@
     </footer>
 
 </div>
+
+<script src="assets/js/script.js"></script>
 
 <!-- -----Balises script Bootstrap----- -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
